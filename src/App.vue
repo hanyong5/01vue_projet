@@ -1,21 +1,23 @@
 <template>
   <banner/>
 
-  <div class="black-bg" v-if="proView==true">
+  <!-- <div class="black-bg" v-if="proView==true">
     <div class="white-bg">
-      <img v-bind:src="product[0].image">
-      <div>{{product[0].title}}</div>
-      <div>{{product[0].price}}</div>
-      <div>{{product[0].content}}</div>
+      <img v-bind:src="product[proNum].image">
+      <div>{{product[proNum].title}}</div>
+      <div>{{product[proNum].price}}</div>
+      <div>{{product[proNum].content}}</div>
       <button v-on:click="proView=false">닫기</button>
     </div>
-  </div>
+  </div> -->
+  <modal :product="product" :proView="proView" :proNum = "proNum" @modalClose="proView=false"/>
+
 
 
   <ul class="view">
-    <li v-for="(item,i) in product" :key="i">
+    <li v-for="(item,i) in product" v-bind:key="i">
       <img v-bind:src="product[i].image">
-      <div>{{product[i].title}} <span v-on:click="proView=true">[상세보기]</span></div>
+      <div>{{product[i].title}} <span v-on:click="proView=true;proNum=i">[상세보기]</span></div>
       <div>{{product[i].price}}</div>
     </li>
   </ul>
@@ -26,19 +28,20 @@
 <script>
 import vdata from './data.js'
 import banner from './components/banner.vue'
-
-
+import modal from './components/modal.vue'
 
 export default {
   name: 'App',
   data(){
     return{
+      proNum:0,
       proView:false,
       product:vdata,
     }
   },
   components:{
-    banner
+    banner:banner,
+    modal:modal,
   }
  
 }
