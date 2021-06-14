@@ -1,7 +1,7 @@
 export default [{
     id : 0,
     title: "디스크빌 751",
-    image: "http://www.winoz.co.kr/img/jaike_1635.jpg",
+    image: "./assets/1715.jpg",
     content: "프리미엄 클래식 로드자전거",
     price: 677000
     },
