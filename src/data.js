@@ -1,7 +1,7 @@
 export default [{
     id : 0,
     title: "디스크빌 751",
-    image: "./assets/1715.jpg",
+    image: "./img/1715.jpg",
     content: "프리미엄 클래식 로드자전거",
     price: 677000
     },
