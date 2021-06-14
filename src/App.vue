@@ -1,4 +1,7 @@
 <template>
+  <div>
+    <img src="./assets/logo.png" alt="" style="max-width:50px">
+  </div>
   <banner/>
 
   <!-- <div class="black-bg" v-if="proView==true">
