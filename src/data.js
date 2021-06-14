@@ -15,28 +15,28 @@ export default [{
     {
     id : 2,
     title: "제인",
-    image: "http://www.winoz.co.kr/img/jaike_1166.jpg",
+    image: "https://boot3-hanyong5.netlify.app/images/nano3.jpg",
     content: "프리미엄 더치바이크 유럽 클래식자전거 허브 3 기어",
     price:457000
     },
     {
     id : 3,
     title: "디스크빌 920",
-    image: "http://www.winoz.co.kr/img/jaike_1600.jpg",
+    image: "https://boot3-hanyong5.netlify.app/images/nano4.jpg",
     content: "자이크 클래식 로드자전거",
     price: 297000
     },
     {
     id : 4,
     title: "버스컬스",
-    image: "http://www.winoz.co.kr/img/jaike_1610.jpg",
+    image: "https://boot3-hanyong5.netlify.app/images/nano5.jpg",
     content: "오리지널 비치크루져 빈티지 클래식자전거",
     price: 330000
     },
     {
     id : 5,
     title: "버킨 비비에",
-    image: "http://www.winoz.co.kr/img/jaike_0000.jpg",
+    image: "https://boot3-hanyong5.netlify.app/images/nano6.jpg",
     content: "더치바이크 클래식자전거",
     price: 337000
   }]
